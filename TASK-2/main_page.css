@@ -1,0 +1,132 @@
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,0.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    outline: none;
+    border:none
+}
+body{
+    background-image:url(view-ready-eat-delicious-meal-go.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(86, 144, 86);
+}
+header .logo{
+    color:black;
+    font-size: 40px;
+    font-weight: bolder;
+}
+header .logo span{
+    color: rgb(116, 34, 34);
+}
+header .navbar a{
+    font-size:20px;
+    padding:0.5rem 1.5rem;
+    color:black;
+}
+header .navbar a:hover{
+    background-color: rgb(133, 58, 58);
+    color:white;
+    border-radius: 5px;
+}
+header .contact button{
+    font-size:15.5px;
+    border-radius: 5px;
+    border:3px solid rgb(116, 44, 44);
+    width:100px;
+    height:30px;
+    color: black;
+    
+}
+.container{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top:250px;
+}
+.container h1{
+    font-size: 54px;
+    font-family: sans-serif;
+    margin-left: 100px;
+}
+.container p{
+    font-size: 16px;
+    margin:8px 300px 0px 120px;
+
+}
+.container span{
+    margin-left: 100px;
+}
+.container button{
+    margin-left: 250px;
+    margin-top: 15px;
+    padding: 7px 30px;
+    border: 3px solid rgb(128, 35, 35);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight:bolder;
+}
+
+
+    
+
+/*medial queries*/
+
+@media(max-width:768px){
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background-color: grey;
+        border-top: 0.1rem solid black;
+        border-bottom: 0.1rem solid black;
+        padding:1rem;
+    }
+    header .logo{
+        padding:0px 10px 0px 0px;
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+    
+}
+@media(max-width:991px){
+    html{
+        font-size:55% ;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+
+
